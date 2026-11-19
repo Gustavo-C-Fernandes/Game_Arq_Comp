@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cruzadinha de Arquitetura Computacional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <p class="prompt">$ ./cruzadinha --materia arquitetura-computacional</p>
+    <h1>Cruzadinha de Arquitetura Computacional</h1>
+    <p class="intro">// Leia a pista, descubra o termo e digite as letras direto nas casas. Clique numa casa de cruzamento de novo para trocar entre horizontal e vertical.</p>
+  </header>
+
+  <main class="jogo">
+    <section class="area-tabuleiro" aria-label="Tabuleiro">
+      <div id="tabuleiro" class="tabuleiro" role="grid" aria-label="Tabuleiro da cruzadinha"></div>
+
+      <div class="controles">
+        <button id="btn-conferir" class="btn btn-principal" type="button">Conferir</button>
+        <button id="btn-reiniciar" class="btn" type="button">Reiniciar</button>
+        <p id="contador" class="contador" aria-live="polite">0 de 13 palavras</p>
+      </div>
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+    </section>
+
+    <aside class="area-pistas" aria-label="Pistas">
+      <section>
+        <h2>Horizontais</h2>
+        <ol id="pistas-h" class="lista-pistas"></ol>
+      </section>
+      <section>
+        <h2>Verticais</h2>
+        <ol id="pistas-v" class="lista-pistas"></ol>
+      </section>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
