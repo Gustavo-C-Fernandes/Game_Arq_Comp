@@ -2,7 +2,7 @@
 
 Jogo de cruzadinha que roda no navegador, feito em HTML, CSS e JavaScript puros, para treinar os termos de Tópicos de Arquitetura Computacional.
 
-**Site publicado:** https://SEU-USUARIO.github.io/arqcomp-cruzadinha/
+**Site publicado:** https://Gustavo-C-Fernandes.github.io/Game_Arq_Comp/
 
 ## Como jogar
 
